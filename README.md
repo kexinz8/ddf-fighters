@@ -1,4 +1,4 @@
-# ddf-fighters
+# ddl-fighters
 Course project for CS498 UIUC
 
 1.	Team member
