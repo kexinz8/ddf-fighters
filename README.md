@@ -1,35 +1,53 @@
-# ddl-fighters
-Course project for CS498 UIUC
 
-1.	Team member
-Kexin Zhu (kexinz8)
-Peiwen Zhang (peiwen4)
 
-2.	Team name
-DDL-fighters
 
-3.	Date of kickoff meeting: 
+Overleaf (for report and documents)
+
+<h1 align="center">DDL Fighters ⏰</h1>
+
+
+> This is a course project of CS498 Data Management in the Cloud(Spring 2022) from University of Illinois at Urbana-Champaign. 
+
+
+## 🤝 Team member
+
+👤 **Kexin Zhu**
+
+- Email: kexinz8@illinois.edu
+
+👤 **Peiwen Zhang**
+
+- Email: peiwen4@illinois.edu
+
+
+## ✨ Team name
+DDL Fighters
+
+## ✨ Date of kickoff meeting
 2/10
 
-4.	Standard group meeting time(s) 
+## ✨ Standard group meeting time(s) 
 Twice a week
 
-5.	Meeting technology (Zoom, Google Meet, MS Teams, …)
+## ✨ 	Meeting technology (Zoom, Google Meet, MS Teams, …)
 In person
 
-6.	Communication technology (Slack, email, text, …) 
+## ✨ Communication technology (Slack, email, text, …) 
 Oral
 
-7.	Skills inventory for the group. Assess what experience various people in the group have that might be useful for the project: for example, programming languages, databases, code repositories, IPEs, cloud platforms, project-tracking tools.
-•	programming language: C++, Python, R
-•	databases: Mysql, Hive
-•	Cloud Platforms: Alibaba Cloud, Google Cloud Platform
-•	Project-tracking tools: Asana
+## ✨ Skills inventory for the group. Assess what experience various people in the group have that might be useful for the project: for example, programming languages, databases, code repositories, IPEs, cloud platforms, project-tracking tools.
+⋅⋅* programming language: C++, Python, R
+⋅⋅* databases: Mysql, Hive
+⋅⋅* Cloud Platforms: Alibaba Cloud, Google Cloud Platform
+⋅⋅* Project-tracking tools: Asana
 
-8.	Code management – how will you handle a shared code base? (GitHub, Dropbox, Google Drive, …) 
+## ✨ Code management – how will you handle a shared code base? (GitHub, Dropbox, Google Drive, …) 
 GitHub
 
-9.	Other tools you might use (for reports and documents, for project management, for keeping task lists, …) 
-Overleaf (for report and documents)
+## ✨ Other tools you might use (for reports and documents, for project management, for keeping task lists, …) 
+Overleaf (for reports and documents)
+
+
+
  
 
