@@ -33,4 +33,3 @@ GitHub
 Overleaf (for report and documents)
  
 
-![image](https://user-images.githubusercontent.com/91443883/153538431-651aaa7b-3f85-43a9-9b94-5da24f35ae53.png)
