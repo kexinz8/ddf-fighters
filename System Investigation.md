@@ -1,13 +1,13 @@
 
 # System Features Table
 |               |       Redis     |    Cassandra   |    Spark    |
-| ------------- | ------------- | ------------- | -------- |
+| ------------- | --------------- | -------------- | ----------- |
 | Data Model    |  Key-Value | Column-Family | Column-Family(Bigtable)|
 |  Indices      |  Indices on key/allow secondary index strategy(e.g: lexicographically encoded indexes; sorted sets indexes) | Cassandra supports both primary and secondary index, allowing queries on the table to use those indexes | Spark cannot maintain indices. Because Spark is not a data management system but a batch data processing engine. |
 |  Consistency  |  Weak consistency (some special cases could obtain strong consistency with WAIT command)  | Cassandra has flexible consistency with regards to queries and guarantees eventual consistency. Strong consistency is guaranteed if R + W consistency is greater than the number of replicas. | Spark write model does not support consistency. |
 |  Sharding/Partitioning | __Criteria__: __Range__; Hash and Consistent hashing. __Implementation__: Client side; Proxy assisted; Query routing;<br /> __+__: allow larger dataset; allocate workload between nodes;<br /> __-__: difficultpdate accommodation | Cassandra supports __hash partitioning__ and the data locality is determined by partition key. | Apache Spark supports two types of partitioning: __hash partitioning__ and __range partitioning__. Depending on how keys in your data are distributed or sequenced as well as the action you want to perform on your data can help you select the appropriate techniques. | 
 |  Replication | __Mechanism__: Leader-follower; <br /> __Leader__: all writes and fast read; <br /> __Follower__: read-only (slow query O(n)); <br />__+__: high availability of follower nodes; offload leaders’ work; <br />__-__: asynchronous replication (may cause data loss); manually restart after failure (no auto-failover)  |  Cassandra has two replication strategies: SimpleStrategy and NetworkTopologyStrategy. <br />Replication factor can also be changed by executing the ALTER KEYSPACE command. | Spark is a cluster computation engine, __it does not replicate data or stored data implicitly__. 
-|  Data Interface: API or language(s), support for joins |  Java，C/C++，C#，PHP，JavaScript，Perl，Object-C，Python，Ruby，Erlang; Does not support joins |  Java , Python, NodeJS, Go and C++ |  Scala, Python, Java, R, SQL
+|  Data Interface: API or language(s), support for joins |  Java，C/C++，C#，PHP，JavaScript，Perl，Object-C，Python，Ruby，Erlang; Does not support joins |  Java , Python, NodeJS, Go and C++ |  Scala, Python, Java, R, SQL |
 
 __System Selection:__ Cassandra
 
