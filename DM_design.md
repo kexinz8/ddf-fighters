@@ -120,7 +120,7 @@ We pipeline this query into 4 parts as follows
 <b>Demonstration2</b>
 ![](https://github.com/kexinz8/ddl-fighters/blob/main/data/Q4-2.png)
 
-<b>STEP2</b> Stored results obatined from above into a table. Group by each month between March and August, sum up the DISTINCT values on available dates(both 'from' and 'to' date) to get the the total number of available nights in that specific month in Portland.
+<b>STEP2</b> Stored results obatined from above into a table. Group by each month between March and August, COUNT the DISTINCT values on available dates(both 'from' and 'to' date) to get the the total number of available nights in that specific month in Portland.
 
 
 #### Query5
