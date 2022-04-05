@@ -71,6 +71,7 @@ data['date' == given_date]['revised_availability'] = False
 > For the six queries in the appropriate dataset description document, give implementation strategies in pseudo-code based on the capabilities of your data store and the indexes you plan to define. Be sure there are enough comments to explain the strategy of each. 
 
 Our chosen data system Cassandra supports sql-like query language CQL, which is quite similar to the structure of SQL. And after prepossessing the raw data, we also make assumptions such as:
+- We are perfoming queries on after-prepocessed dataset by default. (with neccessary info integrated/added/updated/deleted)
 - Generally, the maximum_nights allowed are far greater than the real booking needs. (We did several examinations already).
 
 #### Query1
@@ -91,6 +92,9 @@ Our chosen data system Cassandra supports sql-like query language CQL, which is 
 
 ![](https://github.com/kexinz8/ddl-fighters/blob/main/data/Q2.png)
 
+The above shows an example for one specific city. If we want to get the neighborhoods in any of the cities that have no listings for a 
+given month (as query2 asked), simply delete the WHERE clause condition on specific city.
+
 #### Query3
 
 We pipeline this query into 4 parts as follows
@@ -106,7 +110,7 @@ We pipeline this query into 4 parts as follows
 
 #### Query4
 
-We would take the query3 as a stored procedure named availApt. (for the sake of page limit, we would not go through it since the logic stays the same and nothing changed but passing different parameters)
+<b>STEP1</b> We would take the query3 as a stored procedure named availApt. (for the sake of page limit, we would not go through it since the logic stays the same and nothing changed but passing different parameters)
 
 
 <b>Demonstration1</b>
@@ -115,6 +119,8 @@ We would take the query3 as a stored procedure named availApt. (for the sake of 
 
 <b>Demonstration2</b>
 ![](https://github.com/kexinz8/ddl-fighters/blob/main/data/Q4-2.png)
+
+<b>STEP2</b> Stored results obatined from above into a table. Group by each month between March and August, sum up the DISTINCT values on available dates(both 'from' and 'to' date) to get the the total number of available nights in that specific month in Portland.
 
 
 #### Query5
